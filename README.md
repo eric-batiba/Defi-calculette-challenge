@@ -16,8 +16,8 @@ Create a Java application that:
 ## 🧱 Architecture
 
 Calculator
- ├── ExpressionPreprocessor   // clean input
- ├── ExpressionEvaluator      // use ScriptEngine
+ ├── ExpressionPreprocessor
+ ├── ExpressionEvaluator
  └── Main
 
  ---
