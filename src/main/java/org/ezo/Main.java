@@ -1,20 +1,19 @@
 package org.ezo;
 
-import java.util.logging.Logger;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        final Logger logger = Logger.getLogger(Main.class.getName());
-
         Calculator calculator = new Calculator();
-        logger.info(()->calculator.calculate("1 + 2"));
-        logger.info(()->calculator.calculate("2 + 2 * 5 + 5"));
-        logger.info(()->calculator.calculate("sqrt(4)"));
-        logger.info(()->calculator.calculate("2^8"));
-        logger.info(()->calculator.calculate("1 / 0"));
-        logger.info(()->calculator.calculate("(2+5)*3"));
-        logger.info(()->calculator.calculate("-1--1"));
-        logger.info(()->calculator.calculate("1+-2"));
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== Mini Calculatrice (code golf) === ");
+        while (true) {
+            System.out.println("Entrez une expression : >");
+            String input = scanner.nextLine();
+            if (input.equalsIgnoreCase("exit")) break;
+            System.out.println("= " + calculator.calculate(input));
+        }
 
 
     }
