@@ -16,9 +16,9 @@ Create a Java application that:
 ## 🧱 Architecture
 
 Calculator
- ├── ExpressionPreprocessor
- ├── ExpressionEvaluator
- └── Main
+|- ExpressionPreprocessor
+|- ExpressionEvaluator
+|- Main
 
  ---
 
